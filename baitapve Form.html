@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lam ung dung Form</title>
+</head>
+<body>
+<fieldset>
+  <legend>Your details:</legend>
+  <label>Name:
+    <input type="text" name="Name"/></label><br>
+  <label>Email:
+    <input type="text" name="Email"/></label><br>
+</fieldset>
+<fieldset>
+  <legend>Your Review:</legend>
+  <form action="http://www.example.com/profile.php">
+    <p>How did you hear about us?
+      <select name="social">
+        <option value="Google">Google</option>
+        <option valua="FaceBook">FaceBook</option>
+        <option value="Twitter">Twitter</option>
+        <option value="Zalo">Zalo</option>
+      </select></p>
+  </form>
+  <form action="http://www.example.com/profile.php">
+    <p>Would you visit again? <br/>
+      <input type="radio" name="service" value="Yes" checked="checked"/>Yes
+      <input type="radio" name="service" value="No">No
+      <input type="radio" name="service" value="Maybe">Maybe
+    </p>
+  </form>
+  <form action="http://www.example.com/comments.php">
+    <p>Comments:</p>
+    <textarea name="comments" cols="20" rows="4"></textarea>
+  </form>
+  <form action="http://www.example.com/profile.php">
+    <p><input type="checkbox" name="Subscribe" value="Subscribe" checked="Checked">Sign me up for email updates</p>
+    <input type="submit" name="subscribe" value="Submit Review"/>
+  </form>
+</fieldset>
+</body>
+</html>
